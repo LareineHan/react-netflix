@@ -1,4 +1,8 @@
 .App {
-  background-color: black;
+ margin-bottom: 5rem;
+}
 
+body {
+    background-color: black !important;
+    color:white !important;
 }

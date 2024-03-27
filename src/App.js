@@ -1,6 +1,6 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Routes, Route, Link } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import AppLayout from './layout/AppLayout';
 import MovieDetailPage from './pages/MovieDetail/MovieDetailPage';
 import MoviesPage from './pages/Movies/MoviesPage';

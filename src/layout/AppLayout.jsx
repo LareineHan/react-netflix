@@ -6,6 +6,8 @@ import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import logo from '../images/logo.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUser } from '@fortawesome/free-solid-svg-icons';
 import { Outlet } from 'react-router-dom';
 
 const AppLayout = () => {
@@ -18,7 +20,7 @@ const AppLayout = () => {
         <Navbar.Collapse id="navbarScroll">
           <Nav
             className="me-auto my-2 my-lg-0 nav-menu"
-            style={{ maxHeight: '100px' }}
+            // style={{ maxHeight: '100px' }}
             navbarScroll
           >
             <Nav.Link href="/">Home</Nav.Link>
@@ -33,8 +35,10 @@ const AppLayout = () => {
               className="me-2 search-input"
               aria-label="Search"
             />
-            <Button variant="danger" className='search-btn'>Search</Button>
-          </Form>
+              <Button variant="danger" className='search-btn'>Search</Button>
+
+            </Form>
+            <div><FontAwesomeIcon icon={faUser} width={'42px'} /></div>
         </Navbar.Collapse>
       </Container>
     </Navbar> <Outlet/>
