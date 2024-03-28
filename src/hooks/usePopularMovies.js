@@ -3,7 +3,7 @@ import api from '../utils/api';
 
 const fetchPopularMovies = () => {
 	console.log('fetchPopularMovies called! ');
-	return api.get(`/movie/popular`);
+	return api.get(`movie/popular`);
 };
 
 export const usePopularMoviesQuery = () => {
