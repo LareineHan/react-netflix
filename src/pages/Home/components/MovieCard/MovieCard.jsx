@@ -31,7 +31,7 @@ const MovieCard = ({ movie, index }) => {
       
             <div className='overlay'>
                 <h1 className='card-movie-title'>{movie.title}</h1>
-                {genreNames.map((id) => {
+                {genreNames?.map((id) => {
                     return <Badge bg="danger" className='genre-badge'>{id}</Badge>
                 })}
            

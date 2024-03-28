@@ -1,10 +1,10 @@
 import axios from 'axios';
-
+const API_KEY = process.env.REACT_APP_API_KEY;
 const genre = axios.create({
 	baseURL: 'https://api.themoviedb.org/3/genre/movie/list?language=en',
 	headers: {
 		Accept: 'application/json',
-		Authorization: `Bearer ${process.env.REACT_APP_API_KEY}`,
+		Authorization: `Bearer ${API_KEY}`,
 	},
 });
 // console.log('genre.js is called!');

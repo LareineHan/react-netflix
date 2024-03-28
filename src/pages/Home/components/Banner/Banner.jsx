@@ -18,8 +18,8 @@ const Banner = () => {
                     }
                 }
             }
+            console.log('Array', array);
             return array;
-            // return array.join(', '); 
         }
     }
     const genreNames = genreName_array();
@@ -36,7 +36,7 @@ const Banner = () => {
           <div className='banner-text-area text-white '>
               <h1>{data?.results[0].title}</h1>
               <p>{data?.results[0].overview}</p>
-                 <div className='genres'>{genreNames.map((id) => {
+                 <div className='genres'>{genreNames?.map((id) => {
                     return <Badge bg="danger" className='genre-badge'>{id}</Badge>
                 })}</div>        
 
